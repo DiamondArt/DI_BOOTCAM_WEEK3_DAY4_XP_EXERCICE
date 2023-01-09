@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #000000;
+    font-family: Arial, Helvetica;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    justify-content: center;
+}
+.row #area{
+    min-height: 120vh;
+    background: url(./img/bg4.jpg) no-repeat;
+    background-size: cover;
+    display: inline-grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 5px;
+}
+.buttonRow button {
+    height: 70px;
+    width: 100px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.touchRow, .buttonRow{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)  ;
+    gap: 5px;
+}
+.touchRow div{
+    height: 70px;
+    width: 100px;
+}
+#area div {
+    height: 100px;
+    width: 100px;
+}
+#carre {
+    border: 1px solid rgb(255, 255, 255);
+}
+#cercle {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+}
+#losange {
+    border: 1px solid rgb(255, 255, 255);
+    transform: translateX(23px) rotate(45deg) translateY(20px);
+    width: 63px;
+    height: 63px;
+    margin-bottom: 25px;
+}
+
